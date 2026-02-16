@@ -20,7 +20,7 @@ const Home = () => {
     <div className="p-6 mt-20 ...">
       <SearchBar setSearch={setSearch} />
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-6">
         {recipes.map((meal) => (
           <RecipeCard key={meal.idMeal} meal={meal} />
         ))}
